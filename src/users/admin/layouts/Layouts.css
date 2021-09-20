@@ -1,0 +1,224 @@
+/* @import url('https"://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
+
+:root {
+  --background-color-main: #1a202e;
+  --background-color-orange: #f0c14b;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav__toggle {
+  display: none;
+}
+
+#nav__toggle:checked + .sidebar {
+  margin-left: -280px;
+}
+
+.link {
+  text-decoration: none;
+}
+.dashboard {
+  background-color: #fff !important;
+  border-left: 2px solid transparent !important;
+  border-right: 2px solid #efefef !important;
+  border-bottom: 2px solid #efefef !important;
+  border-top: 2px solid #efefef !important;
+  border-radius: 50px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  width: 240px !important;
+}
+
+.dashboard span {
+  margin-left: -4px;
+}
+
+.sidebar {
+  width: 280px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1rem 1.5rem;
+  overflow-y: scroll;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--background-color-main);
+}
+
+.sidebar__brand {
+  height: 70px;
+}
+
+.brand__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__icons span {
+  font-size: 1.3rem;
+  color: #f0c14b;
+  margin-left: 0.5rem;
+}
+
+.sidebar__user {
+  margin: 0rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+.sidebar__user .admin__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+  border-top: 2px solid #efefef;
+}
+
+.sidebar__user h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sidebar__user span {
+  font-size: 0.8rem;
+}
+
+.sidebar__menu {
+  margin-top: 3rem;
+}
+
+.menu__head {
+  text-transform: uppercase;
+  color: var(--background-color-main);
+  background-color: var(--background-color-orange);
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 16px;
+  margin-bottom: 0.8rem;
+}
+
+.menu__head span {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 0.8rem;
+}
+.menu__head span.las {
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  padding-right: 0.8rem;
+  margin-top: 2px;
+}
+
+.menu__head i {
+  padding-right: 0.8rem;
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+
+.sidebar__menu ul {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar__menu li {
+  margin-bottom: 0.9rem;
+  margin-left: -20px;
+}
+
+.sidebar__menu li a {
+  color: #efefef;
+  font-size: 14px;
+}
+
+.sidebar__menu li a span {
+  display: inline-block;
+}
+
+.sidebar__menu li a .las {
+  padding-right: 0.8rem;
+  color: #f0c14b;
+  font-size: 20px;
+}
+
+header {
+  height: 70px;
+  transition: all 0.5s ease-in-out;
+  display: flex !important;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-orange);
+  padding: 1rem 1.5rem;
+}
+
+.menu__toggle label {
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu__toggle label.view__site {
+  height: 60px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.la-search {
+  float: right !important;
+}
+
+.header__icons {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.menu__toggle label:hover {
+  background-color: #ebce87;
+}
+
+.page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__actions button {
+  outline: none;
+  color: var(--background-color-main);
+  border: none;
+  background-color: var(--background-color-orange);
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header__actions button span {
+  font-size: 1rem;
+}

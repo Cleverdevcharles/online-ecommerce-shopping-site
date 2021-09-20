@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  position: relative;
+  left: 8%;
+  margin-top: 300px;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+
+.mailer {
+  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("../../../components/images/sir\ kingsley\ background\ picture.jpg")
+      center/cover no-repeat;
+}
+
+.form {
+  margin-top: -70px;
+}
+
+.contact {
+  overflow: hidden;
+  margin-top: -33px;
+}
+
+@media only screen and (max-width: 870px) {
+  .contact {
+    margin-top: 0px;
+  }
+
+  .form {
+    margin-top: 50px;
+  }
+}
+.inner-section {
+  width: 55%;
+  float: right;
+  background-color: #f09d5190;
+  padding: 140px;
+  box-shadow: 13px 12px 8px rgba(0, 0, 0, 0.3);
+}
+.inner-section h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.skills button {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.skills button:hover {
+  transition: 1s;
+  background-color: #ecf5f5;
+  color: #f09d51;
+}
+.contact__btn {
+  border: none;
+  width: 100%;
+  background-color: #00248890;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  height: 6vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-section {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-section {
+    width: 100%;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 0;
+  }
+  .inner-section {
+    padding: 60px;
+  }
+  .skills button {
+    font-size: 19px;
+    padding: 5px;
+    width: 160px;
+  }
+}

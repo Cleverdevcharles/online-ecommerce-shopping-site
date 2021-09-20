@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  transition: all 0.3s ease-in-out;
+}
+.formInput:focus {
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+.btn__category {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.loader {
+  position: relative;
+  left: 50%;
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid var(--mainBlack); /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
