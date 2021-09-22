@@ -22,8 +22,6 @@
     "query-string": "^7.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.3",
-    "react-bootstrap/Button": "^1.0.0",
-    "react-bootstrap/Modal": "^4.2.0",
     "react-country-region-selector": "^3.1.0",
     "react-dom": "^17.0.2",
     "react-draft-wysiwyg": "^1.14.7",
