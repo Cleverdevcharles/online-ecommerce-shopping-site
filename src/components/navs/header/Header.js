@@ -2,14 +2,13 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap";
-import Modal from "react-bootstrap";
+import { default as Button, default as Modal } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import { isAuthenticated, signout } from "../../../functions/auth";
 import { getCategories, getSites, list } from "../../apiCore";
-import Site from "../../card/Site";
 import ProductCard from "../../card/ProductCard";
+import Site from "../../card/Site";
 import { itemTotal } from "../../cart/cartHelpers";
 import "./Header.css";
 
